@@ -9,7 +9,7 @@ print("Capas disponibles en el GeoPackage:")
 print(fiona.listlayers(gpkg_path))
 
 # Cargar el archivo GeoPackage
-layer_name = "T12_04_Farmacia"  # Cambia esto al nombre de la capa en el GeoPackage
+layer_name = "T12_04_Farmacia"  # Cambiamos al nombre de la capa en el GeoPackage que nos interesa(las hemos sacado previamente en el paso anterior)
 gdf = gpd.read_file(gpkg_path, layer=layer_name)
 
 # Convertir el GeoDataFrame a CSV con codificación UTF-8
